@@ -30,12 +30,6 @@ void loop()
   Serial.println("Altitude(Meters):");
   Serial.println(a);                                          //Print Altitude
 
-  
-  // you can get a more precise measurement of altitude
-  // if you know the current sea level pressure which will
-  // vary with weather and such. If it is 1015 millibars
-  // that is equal to 101500 Pascals.
-  
   Serial.print("Real altitude = ");
   Serial.print(bmp.readAltitude(101500));
   
